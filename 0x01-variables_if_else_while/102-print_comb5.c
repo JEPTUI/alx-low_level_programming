@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all possible combinations of two digit numbers ranging from 0 to 99
+ * main - print all possible combinations of two digit numbers
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -12,9 +12,9 @@ int main(void)
 
 	for (tens = '0'; tens <= '9'; tens++)
 	{
-		for (ones = '0';ones <= '9';ones++)
+		for (ones = '0'; ones <= '9'; ones++)
 		{
-			for(num1 = tens; num1 <= '9'; num1++)
+			for (num1 = tens; num1 <= '9'; num1++)
 			{
 				for (num2 = ones + 1; num2 <= '9'; num2++)
 				{
@@ -30,7 +30,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				num2 ='0';
+				num2 = '0';
 			}
 		}
 	}
