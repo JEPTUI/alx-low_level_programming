@@ -15,7 +15,7 @@ int main(void)
 	{
 		fbn = num1 + num2;
 		num1 = num2;
-		num2 = fibn;
+		num2 = fbn;
 		if ((num1 % 2) == 0)
 		{
 			sum = num1;
