@@ -12,7 +12,7 @@ int main(void)
 	num2 = 2;
 	sum = 0;
 
-	for (counter = 1; counter < 98; counter++)
+	for (counter = 0; counter < 98; counter++)
 	{
 		sum = num1 + num2;
 		if (num1 != 98)
