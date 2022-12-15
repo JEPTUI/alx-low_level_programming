@@ -17,8 +17,8 @@ int main(void)
 	{
 		fibn = num1 + num2;
 		printf(", %ld", fibn);
-		num1 = num2;
-		fibn = num2;
+		num1 += num2;
+		num2 += num1;
 	}
 	printf("\n");
 
