@@ -13,12 +13,13 @@ int main(void)
 	num1 = 1;
 	num2 = 2;
 	printf("%ld, %ld", num1, num2);
-	for (counter = 1; counter < 50; counter++)
+	for (counter = 1; counter < 49; counter++)
 	{
 		fibn = num1 + num2;
 		printf(", %ld", fibn);
 		num1 += num2;
 		num2 += num1;
+		fibn = num2;
 	}
 	printf("\n");
 
