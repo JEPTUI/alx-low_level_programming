@@ -14,8 +14,8 @@ void print_times_table(int n)
 	if (n >= 0 && n <= 15)
 	{
 		for (num1 = 0; num1 <= n; num1++)
-			{
-				for (num2 =0; num2 <= n; num2++)
+		{
+			for (num2 = 0; num2 <= n; num2++)
 				{
 					prod = (num1 * num2);
 					if (num2 == 0)
@@ -24,7 +24,6 @@ void print_times_table(int n)
 					{
 						_putchar(',');
 						_putchar(' ');
-
 						if (prod <= 9)
 						{
 							_putchar(' ');
@@ -46,6 +45,6 @@ void print_times_table(int n)
 					}
 				}
 				_putchar('\n');
-			}
+		}
 	}
 }
