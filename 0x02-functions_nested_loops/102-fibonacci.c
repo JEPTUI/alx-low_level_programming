@@ -5,22 +5,20 @@
  */
 int main(void)
 {
-	long int num1;
-	long int num2;
-	long int fibn;
+	long int num1 = 1;
+	long int num2 = 2;
+	int fibn = 50;
 	int counter;
 
-	num1 = 1;
-	num2 = 2;
-	printf("%ld, %ld", num1, num2);
-	for (counter = 1; counter < 49; counter++)
+	for (counter = 1; counter <= (fibn / 2); counter++)
 	{
-		fibn = num1 + num2;
-		printf(", %ld", fibn);
+		printf("%ld, %ld", num1, num2);
 		num1 += num2;
 		num2 += num1;
-		fibn = num2;
 	}
+	if (fibn % 2 == 1)
+		printf(", %ld", num1);
+
 	printf("\n");
 
 	return (0);
