@@ -11,7 +11,7 @@ int main(void)
 	num2 = 2;
 	sum = fbn = 0;
 
-	while (a < 4000000)
+	while (fbn < 4000000)
 	{
 		fbn = num1 + num2;
 		num1 = num2;
