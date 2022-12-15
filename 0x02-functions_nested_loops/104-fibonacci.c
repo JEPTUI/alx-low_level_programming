@@ -11,7 +11,6 @@ int main(void)
 	num1 = 1;
 	num2 = 2;
 	sum = 0;
-	printf("%lu, %lu", num1, num2);
 
 	for (counter = 2; counter < 98; counter++)
 	{
