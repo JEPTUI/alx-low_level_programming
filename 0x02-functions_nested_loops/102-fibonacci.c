@@ -7,18 +7,18 @@ int main(void)
 {
 	long int num1 = 1;
 	long int num2 = 2;
-	int fibn = 50;
+	int fibn;
 	int counter;
 
-	for (counter = 1; counter <= (fibn / 2); counter++)
-	{
-		printf("%ld, %ld", num1, num2);
-		num1 += num2;
-		num2 += num1;
-	}
-	if (fibn % 2 == 1)
-		printf(", %ld", num1);
+	printf("%ld, %ld", num1, num2);
 
+	for (counter = 0; counter < 48; counter++)
+	{
+		fibn = num1 + num2;
+		printf(", %ld", fibn);
+		num1 += num2;
+		num2 += fibn
+	}
 	printf("\n");
 
 	return (0);
