@@ -14,7 +14,7 @@ int main(void)
 	num2 = 2;
 	printf("%ld, %ld", num1, num2);
 
-	for (counter = 0; counter < 48; counter++)
+	for (counter = 1; counter < 49; counter++)
 	{
 		fibn = num1 + num2;
 		printf(", %ld", fibn);
