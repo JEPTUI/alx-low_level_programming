@@ -2,7 +2,7 @@
 int _strlen(char *s);
 int check_palindrome(char *s, int i, int len);
 /**
- * _strlen - gets length of a string 
+ * _strlen - gets length of a string
  * @s: string to check
  *
  * Return: length of string
@@ -20,6 +20,8 @@ int _strlen(char *s)
 }
 /**
  * check_palindrome - checks palindrome
+ * @s: string to check
+ * @i: index of the string to be checked
  * @len: length of string
  *
  * Return: 1 if string is palindrome, 0 if not.
