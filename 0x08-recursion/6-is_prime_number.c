@@ -1,4 +1,5 @@
 #include "main.h"
+int is_prime(int n, int i);
 /**
  * is_prime_number - find prime numbers
  * @n: number to check
@@ -6,13 +7,22 @@
  */
 int is_prime_number(int n)
 {
-	int i;
-
 	if (n <= 1)
 		return (0);
 
-	for (i = 2; i < n; i++)
-		if (n % i == 0)
-			return (0);
-	return (1);
+	return (is_prime(n, 2));
+}
+/**
+ * is_prime - recursively divide by higher nums
+ * @n: number to check if prime
+ * @i: divisor
+ * Return: 1 if prime, 0 if not or recursive function call
+ */
+int is_prime(int n, int i)
+{
+	if (n == i)
+		return (1);
+	if (n % i == 0)
+		return (0);
+	return (is_prime(n, i + 1));
 }
