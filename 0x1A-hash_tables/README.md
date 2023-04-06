@@ -23,7 +23,7 @@
 ## More Info
 ### Data Structures
 ** Please use these data structures for this project:
-'''
+```
 /**
  * struct hash_node_s - Node of a hash table
  *
@@ -52,10 +52,10 @@ typedef struct hash_table_s
      unsigned long int size;
      hash_node_t **array;
 } hash_table_t;
-'''
+```
 ## Python Dictionaries
-'''
+```
 Python dictionaries are implemented using hash tables. When you will be done with this project, you will be able to better understand the power and simplicity of Python dictionaries. So much is actually happening when you type d = {'a': 1, 'b': 2}, but everything looks so simple for the user. Python doesn’t use the exact same implementation than the one you will work on today though. 
 
 Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. 
-'''
+```
