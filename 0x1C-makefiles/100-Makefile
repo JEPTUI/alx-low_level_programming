@@ -9,7 +9,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # make source files executable
 all: m.h $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 # deletes all Emacs and Vim temporary files along with the executable
 clean:
