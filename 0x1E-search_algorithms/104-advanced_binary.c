@@ -24,8 +24,8 @@ int binary_recursive_search(int *array, size_t left, size_t right, int value)
 	if (array[i] == value && (i == left || array[i - 1] != value))
 		return (i);
 	if (array[i] >= value)
-		return(binary_recursive_search(array, left, i, value));
-	return(binary_recursive_search(array, i + 1, right, value));
+		return (binary_recursive_search(array, left, i, value));
+	return (binary_recursive_search(array, i + 1, right, value));
 }
 
 /**
@@ -40,5 +40,5 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	if (array == NULL || size == 0)
 		return (-1);
-	return(binary_recursive_search(array, 0, size - 1, value));
+	return (binary_recursive_search(array, 0, size - 1, value));
 }
